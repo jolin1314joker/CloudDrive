@@ -140,7 +140,7 @@ function renderLogoIcon(iconUrl = '', fallbackIcon = 'cloud') {
   return `<div class="logo-icon"><span class="material-icons-round">${fallbackIcon}</span></div>`;
 }
 
-function renderHTML(content, title = 'Genshin Impact Aim') {
+function renderHTML(content, title = 'Ai青楼|QQ群:1015183800') {
   const safeTitle = escapeHtml(title);
   return `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -1232,7 +1232,7 @@ function renderHTML(content, title = 'Genshin Impact Aim') {
 ${content}
 
 <footer class="foot-bar">
-  <span>TG:@Genshin_Impact_Aim · QQ通知群:1124571330</span>
+  <span>Ai无极限|资源无界限</span>
 </footer>
 
 <div class="snackbar" id="snackbar">
@@ -3837,7 +3837,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </html>`;
 }
 
-function renderLoginPage(error = '', siteTitle = 'Genshin Impact Aim', cloudIconUrl = '', loginBackgroundUrl = '') {
+function renderLoginPage(error = '', siteTitle = 'Ai青楼|QQ群:1015183800', cloudIconUrl = '', loginBackgroundUrl = '') {
   const bgUrl = String(loginBackgroundUrl || '').trim();
   const loginBg = bgUrl
     ? `<img class="login-bg-image" src="${escapeAttr(bgUrl)}" alt="" aria-hidden="true">`
@@ -7576,7 +7576,7 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
     const R2 = env.R2_BUCKET;
-    const siteTitle = env.SITE_TITLE || 'Genshin Impact Aim';
+    const siteTitle = env.SITE_TITLE || 'Ai青楼|QQ群:1015183800';
     const cloudIconUrl = env.CLOUD_ICON_URL || '';
     const loginBackgroundUrl = env.LOGIN_BACKGROUND_URL || '';
 
